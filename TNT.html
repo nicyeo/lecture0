@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="C:/Users/engchye.yeo/lecture0/Y3 Logo Teal small.ico">
+
+	<title>Track & Trace</title>
+	<link rel="stylesheet" href="/trackikeamy/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/trackikeamy/webjars/font-awesome/5.8.1/css/all.min.css"/>
+	<link rel="stylesheet" href="/trackikeamy/webjars/AdminLTE/2.4.10/dist/css/AdminLTE.min.css"/>
+	<link rel="stylesheet" href="/trackikeamy/webjars/AdminLTE/2.4.10/dist/css/skins/_all-skins.min.css"/>
+	<link rel="stylesheet" href="/trackikeamy/resources/css/application-c45a8e99243dc32b11f8e29eef78fe95.css"/>
+
+	<script src="/trackikeamy/webjars/jquery/3.3.1-2/jquery.min.js"></script>
+	<script src="/trackikeamy/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="/trackikeamy/webjars/AdminLTE/2.4.10/dist/js/adminlte.min.js"></script>
+	<script src="/trackikeamy/resources/js/jquery-barcode.min-178478d961be0104ff2b2d10fc6bbb95.js"></script>
+	<script src="/trackikeamy/resources/js/application-1e58e4d12447f581e54701f0e8fa16cb.js"></script>
+</head>
+<body id="collapseExample" class="sidebar-collapse">
+<div class="wrapper">
+	<header class="main-header">
+	<div class="row header-tittle">
+		<div class="col-md-4 text">ORDER TRACKING</div>
+		<div class="col-md-6">&nbsp;</div>
+		<div class="col-md-2">
+			<ul class="nav navbar-nav">
+				<li class="dropdown messages-menu">
+					<a class="ikea_logo">
+					<img class="banner-img" alt="Delivery" src="/C:/users/engchye.yeo/lecture0/IKEA Truck.jpg">
+				</li>
+			</ul>
+			<div class="" style="font-size: 11px;position: absolute;width: 50%;margin-left: 40%;">Powered by Y3 Technologies</div>
+		<!--	<div class="" style="font-size: 11px;position: absolute;width: 50%;margin-left: 40%;margin-top: 10%;">Y3 Technologies</div> -->
+		</div>
+	</div>
+	<div class="container-fluid">
+		<form method="post" action="/trackikeamy/">
+			<div class="row form-row">
+				<div class="col-md-1 hide-small">&nbsp;</div>
+				<div class="col-md-2">
+					<select class="form-control select2" style="width: 100%;" id="option" name="option">
+						<option value="orderRefNo">Customer Sales No.</option>
+						<option value="orderNo">Service Number</option>
+					</select>
+				</div>
+				<br />
+				<div class="col-md-6 form-group has-error">
+					<input type="text" class="form-control"
+						   placeholder="Orders (XXXX-XXXXXXXX) separated by comma, maximum: 20" title="must not be null" id="queries" name="queries" value="">
+					<span class="help-block" style="font-size: small; text-align: center">[ Please key in multiple orders (XXXX-XXXXXXXX) by comma separator,maximum: 20 ]</span>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-flat btn-primary-ct" style="margin: auto; width: 100%" id="form_submit"
+							type="submit" onclick="addOverlay()">Track</button>
+				</div>
+				<div class="col-md-1 hide-small">&nbsp;</div>
+			</div>
+		</form>
+	</div>
+</header>
+	<div class="row" style="position: relative;">
+		<div class="container-fluid">
+			
+		</div>
+		
+		<div class="content-wrapper" style="width: 100%;">
+			<div class="content">
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="pageOverlay" class="modal-backdrop overlay" style="display: none"></div>
+</body>
+</html>
